@@ -1,0 +1,67 @@
+# ─── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual-envs & Poetry
+venv/
+.env/
+.venv/
+poetry.lock
+pip-wheel-metadata/
+
+# ─── Django ────────────────────────────────────────────────────────────────────
+*.log
+*.pot
+*.py,cover
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# ─── IDEs / Editors ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~ 
+.DS_Store
+
+# ─── macOS & System Files ──────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+ehthumbs.db
+
+# ─── Environment & Config ──────────────────────────────────────────────────────
+.env           # Django secrets / env vars
+*.local.yml
+*.env.*        # e.g. .env.dev
+
+# ─── Docker ─────────────────────────────────────────────────────────
+*/*/Dockerfile
+**/docker-compose*.yml
+docker/
+*.dockerfile
+
+# ─── Coverage / Testing ────────────────────────────────────────────────────────
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
