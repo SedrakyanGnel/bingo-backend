@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets, permissions
+from .models import Bin
+from .serializers import BinSerializer
 
-# Create your views here.
+
+class BinViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Bin.objects.filter(active=True)
+    serializer_class = BinSerializer
+    permission_classes = [permissions.AllowAny]   # public map

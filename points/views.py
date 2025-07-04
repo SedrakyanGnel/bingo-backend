@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework import viewsets, permissions
+from .serializers import BalanceSerializer
 
-# Create your views here.
+
+class BalanceViewSet(viewsets.ReadOnlyModelViewSet):
+    serializer_class = BalanceSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return [self.request.user]        # dummy iterable
