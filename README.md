@@ -9,7 +9,7 @@ Django + Celery back-end that powers the BinGo mobile app
 
 ```bash
 # Clone
-git clone https://github.com/your-org/bingo-backend.git
+git clone https://github.com/SedrakyanGnel/bingo-backend.git
 cd bingo-backend
 
 # System deps
